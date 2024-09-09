@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cmain">#121212</color>
+    <color name="cmain2">#8875FF</color>
+    <color name="xam">#979797</color>
+    <color name="edtxam">#1D1D1D</color>
+    <color name="xam2">#535353</color>
+    <color name="xam3">#363636</color>
+</resources>
