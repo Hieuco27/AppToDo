@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Sắp xếp theo tên  "
+        android:id="@+id/ten"/>
+    <item
+        android:title="Sắp xếp theo ngày "
+        android:id="@+id/time"/>
+</menu>

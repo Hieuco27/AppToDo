@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Profile Image -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/imgprofile"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"/>
+
+    <!-- Welcome text -->
+    <TextView
+        android:id="@+id/rename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xin Chào"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textStyle="italic"/>
+
+
+
+    <!-- Settings Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cài đặt"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Settings Option -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/setting"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Setting"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"/>
+
+
+    </LinearLayout>
+
+    <!-- Account Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Account Options -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/acconunt"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/doiMk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đổi mật khẩu "
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

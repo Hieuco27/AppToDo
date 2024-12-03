@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_task"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:src="@drawable/item"
+    android:clipToPadding="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/ln_card_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@color/white">
+
+        <!-- Tiêu đề công việc -->
+        <TextView
+            android:id="@+id/tv_task_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="demo app"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Image pin, có thể ẩn hiện -->
+        <ImageView
+            android:id="@+id/pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pin"
+            android:layout_gravity="end"
+            android:visibility="gone" /> <!-- Mặc định là ẩn -->
+
+        <!-- Mô tả công việc -->
+        <TextView
+            android:id="@+id/tv_task_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="nhap mo ta"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- Thời gian bắt đầu -->
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="14:56"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- Ngày tháng -->
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aug"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>

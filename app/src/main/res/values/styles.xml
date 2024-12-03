@@ -12,7 +12,6 @@
         <item name="android:fontFamily">@font/latobold</item>
         <item name="android:textSize">30sp</item>
         <item name="android:layout_gravity">center</item>
-
         <item name="android:textStyle">bold</item>
     </style>
     <style name="tvsub2">
@@ -65,4 +64,6 @@
             <item name="android:textSize">16sp</item>
             <item name="android:textAllCaps">false</item>
     </style>
+
+
 </resources>

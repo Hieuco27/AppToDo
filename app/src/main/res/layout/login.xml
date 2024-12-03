@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cmain"
-    android:padding="30sp"
+    android:padding="20sp"
     tools:context=".LoginActivity">
 
     <ImageView
@@ -14,7 +14,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/arrowleft"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
@@ -39,7 +38,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/etUsername"
+        android:id="@+id/edtUsername"
        style="@style/edt"
         android:hint="Enter your username"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,13 +52,15 @@
         android:layout_marginTop="25dp"
         android:text="Password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etUsername" />
+        app:layout_constraintTop_toBottomOf="@id/edtUsername" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/Password"
+        android:id="@+id/edtPassword"
         style="@style/edt"
+        android:layout_marginTop="8dp"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvPassword"
         app:layout_constraintTop_toBottomOf="@id/tvPassword" />
 
@@ -72,7 +73,7 @@
 
         android:text="Login"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Password" />
+        app:layout_constraintTop_toBottomOf="@id/edtPassword" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -85,7 +86,7 @@
 
 
     <LinearLayout
-        android:id="@+id/llregister"
+        android:id="@+id/btnregister"
         android:layout_marginTop="45sp"
         android:gravity="center"
         android:layout_width="match_parent"

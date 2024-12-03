@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+         />
+
+    <TextView
+        android:id="@+id/delete_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+         />
+    <TextView
+        android:id="@+id/complete_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoàn thành"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        />
+</LinearLayout>

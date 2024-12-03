@@ -1,13 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_home"
 
-    <item android:title="Home"
-        android:src="@drawable/dhhome"
-        android:id="@id/home"/>
+        android:icon="@drawable/home" />
+    <item
+        android:id="@+id/fab"
+        android:title="" />
 
-    <item android:title="Calendar"
-        android:src="@drawable/dhcalendar"
-        android:id=""/>
-    <item android:title="Profile" />
-    <item android:title="Focuse" />
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/profile" />
+
+
+
 </menu>

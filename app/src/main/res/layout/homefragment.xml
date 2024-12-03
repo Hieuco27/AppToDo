@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Notes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+    <RelativeLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Nút "tien_ich" nằm ở ngoài cùng bên phải -->
+        <!-- Nút "danhmuc" nằm bên trái của "tien_ich" -->
+        <ImageView
+            android:id="@+id/sort_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/tien_ich" />
+
+        <ImageView
+            android:id="@+id/danhmuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/danh_muc"
+            android:layout_toStartOf="@id/sort_by"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Nút "addNote" nằm bên trái của "danhmuc" -->
+        <ImageView
+            android:id="@+id/addNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sua"
+            android:layout_toStartOf="@id/danhmuc"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/change"
+            android:hint="Tìm kiếm"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_search"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Tìm kiếm"
+            android:padding="10dp" />
+    </LinearLayout>
+
+
+    <!-- RecyclerView cho danh sách ghi chú -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10sp"
+        android:layout_marginTop="25dp"
+        android:scrollbars="vertical"/>
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/cmain2"
+        android:src="@drawable/ic_add_fab"
+        android:tint="@color/white"
+        app:maxImageSize="40dp" />-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

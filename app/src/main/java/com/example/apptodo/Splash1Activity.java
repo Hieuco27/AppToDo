@@ -14,11 +14,12 @@ import androidx.core.view.WindowInsetsCompat;
 public class Splash1Activity extends AppCompatActivity {
     TextView tvSkip;
     AppCompatButton btnnext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_splash1);
+        setContentView(R.layout.onboadding);
         tvSkip=findViewById(R.id.tvSkip);
         btnnext=findViewById(R.id.btnnext);
         tvSkip.setOnClickListener(view -> {

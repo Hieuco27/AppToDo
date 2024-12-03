@@ -6,6 +6,9 @@
     </style>
 
     <style name="Theme.AppToDo" parent="Base.Theme.AppToDo" />
+    <style name="Theme.AppBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+    </style>
     <style name="AppTheme" parent="Theme.MaterialComponents.Light">
         ...
     </style>

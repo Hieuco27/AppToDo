@@ -18,12 +18,12 @@ public class Splash2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_splash2);
+        setContentView(R.layout.onboadding2);
         tvSkip=findViewById(R.id.tvSkip);
         tvBack=findViewById(R.id.tvBack);
         btnnext=findViewById(R.id.btnnext);
         tvSkip.setOnClickListener(view -> {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
 
         });
